@@ -1,1 +1,1 @@
-/dev-tools/node_modules/*
+!/dev-tools/node_modules/*
