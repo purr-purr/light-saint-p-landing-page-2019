@@ -25,6 +25,7 @@ body {
     font-size: 14px;
     color: $color-base;
     margin: 0 auto;
+	overflow: inherit;
 }
 
 a {
@@ -86,11 +87,6 @@ h4 {font-size: 22px;}
     width: 100%;
     max-width: 1920px;
     background: rgba(0, 91, 193, 0.6);
-	// &__inner {
-	// 	display: flex;
-	// 	justify-content: center;
-	// 	height: 80px;
-	// }
 }
 
 // Logo
@@ -118,15 +114,15 @@ h4 {font-size: 22px;}
 		line-height: 120%;
 		letter-spacing: 0.03em;
 	}
+	&__title:hover {
+		font-size: 23px;
+		transition: all .5 linear;
+		color: #ffffffd6;
+	}
 }
 
 // Navigation
 .nav {
-    // &__ul {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
     &__li {
         padding: 30px 10px;
         list-style-type: none;
@@ -606,11 +602,11 @@ h4 {font-size: 22px;}
 }
 
 // RESPONSIVE
-/* 400px - 550px */
+/* 9900px - 1130px */
 @media screen and (max-width: 1130px) {
 	.news {
 		flex-wrap: wrap;
-    	justify-content: center;
+		justify-content: center;
 	}
 	.news__large_tablet {
 		margin-top: 55px;
@@ -619,7 +615,7 @@ h4 {font-size: 22px;}
 		margin-right: 0;
 	}
 }
-/* 400px - 550px */
+/* 700px - 990px */
 @media screen and (max-width: 990px) {
 	.header {
 		background: rgba(0,91,193,0.8);
@@ -664,7 +660,7 @@ h4 {font-size: 22px;}
 	}
 }
 
-/* 400px - 550px */
+/* 550px - 700px */
 @media screen and (max-width: 700px) {
 	.rent .rent__card {
 		width: 90%;
@@ -683,11 +679,10 @@ h4 {font-size: 22px;}
 	}
 }
 
-/* 400px - 550px */
+/* 450px - 550px */
 @media screen and (max-width: 550px) {
 	.news__large_tablet {
 		flex-direction: column;
-		
 	}
 	.news__small:last-child {
 		margin-top: 25px;
@@ -701,7 +696,7 @@ h4 {font-size: 22px;}
 	}
 	.news__title {
 		display: block;
-    	text-align: center;
+		text-align: center;
 	}
 	.main__title-news {
 		display: flex;
@@ -709,7 +704,7 @@ h4 {font-size: 22px;}
 	}
 }
 
-/* 400px - 550px */
+/* 380px - 450px */
 @media screen and (max-width: 450px) {
 	.intro {
 		margin-left: 5%;
@@ -746,13 +741,13 @@ h4 {font-size: 22px;}
 		}
 	}
 	.intro__title {
-    	font-size: 41px;
+		font-size: 41px;
 	}
 	.tabs-item__card {
 		max-width: 265px;
 		max-height: 86px;
 		width: auto;
-    	height: auto;
+		height: auto;
 		right: 25px;
 	}
 	.tabs-item__img {
@@ -767,10 +762,4 @@ h4 {font-size: 22px;}
 			padding: 0;
 		}
 	}
-
 }
-
-
-// font-family: 'Open Sans', sans-serif;
-// font-family: 'Oswald', sans-serif;
-// font-family: 'Titillium Web', sans-serif;

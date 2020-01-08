@@ -1,3 +1,4 @@
+// Our Projects Section Slider
 $(document).ready(function(){
     $('.slider').slick({
         autoplay: true,
@@ -17,6 +18,7 @@ $(document).ready(function(){
     });
 });
 
+// Rent Section Slider
 $(document).ready(function(){
     $('.card__slider-wrapper').slick({
         autoplay: true,
