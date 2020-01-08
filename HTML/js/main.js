@@ -3,9 +3,17 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 3000,
         slidesToShow: 2,
-        prevArrow: "<img src='../HTML/img/icons/left-arrow.svg' class='prev' alt='prev'>",
-        nextArrow: "<img src='../HTML/img/icons/right-arrow.svg' class='next' alt='next'>",
-        slidesToScroll: 1
+        prevArrow: "<img src='../HTML/img/icons/left-arrow.svg' class='prev project_arrow' alt='prev'>",
+        nextArrow: "<img src='../HTML/img/icons/right-arrow.svg' class='next project_arrow' alt='next'>",
+        slidesToScroll: 1,
+        responsive: [
+                        {
+                            breakpoint: 900,
+                            settings: {
+                            slidesToShow: 1
+                            }
+                        },
+                    ]
     });
 });
 
@@ -14,8 +22,8 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 3000,
         slidesToShow: 1,
-        prevArrow: "<img src='../HTML/img/icons/left-arrow.svg' class='prev' alt='prev'>",
-        nextArrow: "<img src='../HTML/img/icons/right-arrow.svg' class='next' alt='next'>",
+        prevArrow: "<img src='../HTML/img/icons/left-arrow.svg' class='prev rent-arrow' alt='prev'>",
+        nextArrow: "<img src='../HTML/img/icons/right-arrow.svg' class='next rent-arrow' alt='next'>",
         slidesToScroll: 1
     });
 })
